@@ -10,7 +10,7 @@ module Browser
 
 		if name == :ie or name == :internet_explorer
 			#I'm hardcoding version for this sample
-			caps     = Selenium::WebDriver::Remote::Capabilities.internet_explorer(:version => '8')
+			caps = Selenium::WebDriver::Remote::Capabilities.internet_explorer(:version => '8')
         	@browser = Watir::Browser.new :remote, :url => 'http://[ip]:4444/wd/hub' , :desired_capabilities => caps
 		else
 			@headless = Headless.new
