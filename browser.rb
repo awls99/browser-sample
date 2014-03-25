@@ -43,10 +43,10 @@ end
 class Sample_FF
 	include Browser
 end
-t = SAMPLE_IE.new
+t = Sample_IE.new
 t.browser(:ie).goto 'http://google.com'
 puts t.browser.html
 
-t = SAMPLE_FF.new
+t = Sample_FF.new
 t.browser.goto 'http://google.com'
 puts t.browser.html
